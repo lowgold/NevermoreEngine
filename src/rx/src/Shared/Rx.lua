@@ -20,8 +20,14 @@
 -- local cancellableDelay = require("cancellableDelay")
 -- local CancelToken = require("CancelToken")
 
+local TS = require(game:GetService("ReplicatedStorage"):WaitForChild("rbxts_include"):WaitForChild("RuntimeLib"))
 local Maid = TS.import(script, game:GetService("ServerScriptService"), "TS", "nevermore", "maid", "Maid")
 local Observable = TS.import(script, game:GetService("ServerScriptService"), "TS", "nevermore", "rx", "Observable")
+local Promise = TS.import(script, game:GetService("ServerScriptService"), "TS", "nevermore", "promise", "Promise")
+local Symbol = TS.import(script, game:GetService("ServerScriptService"), "TS", "nevermore", "symbol", "Symbol")
+local ThrottledFunction = TS.import(script, game:GetService("ServerScriptService"), "TS", "nevermore", "throttle", "ThrottledFunction")
+local cancellableDelay = TS.import(script, game:GetService("ServerScriptService"), "TS", "nevermore", "cancellableDelay", "cancellableDelay")
+local CancelToken = TS.import(script, game:GetService("ServerScriptService"), "TS", "nevermore", "canceltoken", "CancelToken")
 
 local UNSET_VALUE = Symbol.named("unsetValue")
 

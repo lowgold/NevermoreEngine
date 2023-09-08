@@ -3,10 +3,14 @@
 	@class CancelToken
 ]=]
 
-local require = require(script.Parent.loader).load(script)
+-- local require = require(script.Parent.loader).load(script)
+-- local Promise = require("Promise")
+-- local Signal = require("Signal")
 
-local Promise = require("Promise")
-local Signal = require("Signal")
+local TS = require(game:GetService("ReplicatedStorage"):WaitForChild("rbxts_include"):WaitForChild("RuntimeLib"))
+local Promise = TS.import(script, game:GetService("ServerScriptService"), "TS", "nevermore", "promise", "Promise")
+local Signal = TS.import(script, game:GetService("ServerScriptService"), "TS", "nevermore", "signal", "Signal")
+
 
 local CancelToken = {}
 CancelToken.ClassName = "CancelToken"
