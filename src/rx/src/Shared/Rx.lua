@@ -10,15 +10,18 @@
 	@class Rx
 ]=]
 
-local require = require(script.Parent.loader).load(script)
+--local require = require(script.Parent.loader).load(script)
 
-local Maid = require("Maid")
-local Observable = require("Observable")
-local Promise = require("Promise")
-local Symbol = require("Symbol")
-local ThrottledFunction = require("ThrottledFunction")
-local cancellableDelay = require("cancellableDelay")
-local CancelToken = require("CancelToken")
+-- local Maid = require("Maid")
+-- local Observable = require("Observable")
+-- local Promise = require("Promise")
+-- local Symbol = require("Symbol")
+-- local ThrottledFunction = require("ThrottledFunction")
+-- local cancellableDelay = require("cancellableDelay")
+-- local CancelToken = require("CancelToken")
+
+local Maid = TS.import(script, game:GetService("ServerScriptService"), "TS", "nevermore", "maid", "Maid")
+local Observable = TS.import(script, game:GetService("ServerScriptService"), "TS", "nevermore", "rx", "Observable")
 
 local UNSET_VALUE = Symbol.named("unsetValue")
 

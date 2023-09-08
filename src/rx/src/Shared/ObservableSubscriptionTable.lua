@@ -4,9 +4,11 @@
 	@class ObservableSubscriptionTable
 ]=]
 
-local require = require(script.Parent.loader).load(script)
+--local require = require(script.Parent.loader).load(script)
+--local Observable = require("Observable")
 
-local Observable = require("Observable")
+local TS = require(game:GetService("ReplicatedStorage"):WaitForChild("rbxts_include"):WaitForChild("RuntimeLib"))
+local Observable = TS.import(script, game:GetService("ServerScriptService"), "TS", "nevermore", "rx", "Observable")
 
 local ObservableSubscriptionTable = {}
 ObservableSubscriptionTable.ClassName = "ObservableSubscriptionTable"

@@ -14,9 +14,11 @@
 	@class Subscription
 ]=]
 
-local require = require(script.Parent.loader).load(script)
+--local require = require(script.Parent.loader).load(script)
+--local MaidTaskUtils = require("MaidTaskUtils")
 
-local MaidTaskUtils = require("MaidTaskUtils")
+local TS = require(game:GetService("ReplicatedStorage"):WaitForChild("rbxts_include"):WaitForChild("RuntimeLib"))
+local MaidTaskUtils = TS.import(script, game:GetService("ServerScriptService"), "TS", "nevermore", "maid", "MaidTaskUtils")
 
 local ENABLE_STACK_TRACING = false
 
