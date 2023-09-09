@@ -18,7 +18,7 @@
 --local MaidTaskUtils = require("MaidTaskUtils")
 
 local TS = require(game:GetService("ReplicatedStorage"):WaitForChild("rbxts_include"):WaitForChild("RuntimeLib"))
-local MaidTaskUtils = TS.import(script, game:GetService("ServerScriptService"), "TS", "nevermore", "maid", "MaidTaskUtils")
+local MaidTaskUtils = TS.import(script, game:GetService("ReplicatedStorage"), "TS", "nevermore", "maid", "MaidTaskUtils")
 
 local ENABLE_STACK_TRACING = false
 

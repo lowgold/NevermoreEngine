@@ -8,7 +8,7 @@
 --local Observable = require("Observable")
 
 local TS = require(game:GetService("ReplicatedStorage"):WaitForChild("rbxts_include"):WaitForChild("RuntimeLib"))
-local Observable = TS.import(script, game:GetService("ServerScriptService"), "TS", "nevermore", "rx", "Observable")
+local Observable = TS.import(script, game:GetService("ReplicatedStorage"), "TS", "nevermore", "rx", "Observable")
 
 local ObservableSubscriptionTable = {}
 ObservableSubscriptionTable.ClassName = "ObservableSubscriptionTable"

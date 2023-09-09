@@ -58,7 +58,7 @@
 --local require = require(script.Parent.loader).load(script)
 --local Subscription = require("Subscription")
 local TS = require(game:GetService("ReplicatedStorage"):WaitForChild("rbxts_include"):WaitForChild("RuntimeLib"))
-local Subscription = TS.import(script, game:GetService("ServerScriptService"), "TS", "nevermore", "rx", "Subscription")
+local Subscription = TS.import(script, game:GetService("ReplicatedStorage"), "TS", "nevermore", "rx", "Subscription")
 
 local ENABLE_STACK_TRACING = false
 

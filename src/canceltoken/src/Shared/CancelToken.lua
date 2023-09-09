@@ -8,8 +8,8 @@
 -- local Signal = require("Signal")
 
 local TS = require(game:GetService("ReplicatedStorage"):WaitForChild("rbxts_include"):WaitForChild("RuntimeLib"))
-local Promise = TS.import(script, game:GetService("ServerScriptService"), "TS", "nevermore", "promise", "Promise")
-local Signal = TS.import(script, game:GetService("ServerScriptService"), "TS", "nevermore", "signal", "Signal")
+local Promise = TS.import(script, game:GetService("ReplicatedStorage"), "TS", "nevermore", "promise", "Promise")
+local Signal = TS.import(script, game:GetService("ReplicatedStorage"), "TS", "nevermore", "signal", "Signal")
 
 
 local CancelToken = {}
